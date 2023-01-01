@@ -20,7 +20,7 @@ if(isset($_POST['order'])){
    $email = filter_var($email, FILTER_SANITIZE_STRING);
    $method = $_POST['method'];
    $method = filter_var($method, FILTER_SANITIZE_STRING);
-   $address = 'flat no. '. $_POST['flat'] .' '. $_POST['street'] .' '. $_POST['city'] .' '. $_POST['state'] .' '. $_POST['country'] .' - '. $_POST['pin_code'];
+   $address = $_POST['flat'] .' '. $_POST['city'];
    $address = filter_var($address, FILTER_SANITIZE_STRING);
    $placed_on = date('d-M-Y');
 
@@ -43,15 +43,15 @@ if(isset($_POST['order'])){
    $order_query->execute([$name, $number, $email, $method, $address, $total_products, $cart_total]);
 
    if($cart_total == 0){
-      $message[] = 'your cart is empty';
+      $message[] = 'Your cart is Empty';
    }elseif($order_query->rowCount() > 0){
-      $message[] = 'order placed already!';
+      $message[] = 'Order Already Placed!';
    }else{
       $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price, placed_on) VALUES(?,?,?,?,?,?,?,?,?)");
       $insert_order->execute([$user_id, $name, $number, $email, $method, $address, $total_products, $cart_total, $placed_on]);
       $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
       $delete_cart->execute([$user_id]);
-      $message[] = 'order placed successfully!';
+      $message[] = 'Order Placed Successfully!';
    }
 
 }
@@ -99,61 +99,47 @@ if(isset($_POST['order'])){
       echo '<p class="empty">your cart is empty!</p>';
    }
    ?>
-        <div class="grand-total">grand total : <span>$<?= $cart_grand_total; ?>/-</span></div>
+        <div class="grand-total">Total : <span>Taka <?= $cart_grand_total; ?>/-</span></div>
     </section>
 
     <section class="checkout-orders">
 
         <form action="" method="POST">
 
-            <h3>place your order</h3>
+            <h3>Place Your Order</h3>
 
             <div class="flex">
                 <div class="inputBox">
-                    <span>your name :</span>
+                    <span>Your Name :</span>
                     <input type="text" name="name" placeholder="enter your name" class="box" required>
                 </div>
                 <div class="inputBox">
-                    <span>your number :</span>
+                    <span>Your Mobile Number :</span>
                     <input type="number" name="number" placeholder="enter your number" class="box" required>
                 </div>
                 <div class="inputBox">
-                    <span>your email :</span>
+                    <span>Your Email :</span>
                     <input type="email" name="email" placeholder="enter your email" class="box" required>
                 </div>
                 <div class="inputBox">
-                    <span>payment method :</span>
+                    <span>Payment Method :</span>
                     <select name="method" class="box" required>
-                        <option value="cash on delivery">cash on delivery</option>
-                        <option value="credit card">credit card</option>
-                        <option value="paytm">paytm</option>
-                        <option value="paypal">paypal</option>
+                        <option value="cash on delivery">Cash on delivery</option>
+                        <option value="credit card">Credit card</option>
+                        <option value="paytm">Bikash</option>
+                        <option value="paypal">Nagad</option>
                     </select>
                 </div>
                 <div class="inputBox">
-                    <span>address line 01 :</span>
-                    <input type="text" name="flat" placeholder="e.g. flat number" class="box" required>
+                    <span>Your Address :</span>
+                    <input type="text" name="flat" placeholder="e.g. Full Address" class="box" required>
                 </div>
+
                 <div class="inputBox">
-                    <span>address line 02 :</span>
-                    <input type="text" name="street" placeholder="e.g. street name" class="box" required>
+                    <span>City :</span>
+                    <input type="text" name="city" placeholder="e.g. Dhaka" class="box" required>
                 </div>
-                <div class="inputBox">
-                    <span>city :</span>
-                    <input type="text" name="city" placeholder="e.g. mumbai" class="box" required>
-                </div>
-                <div class="inputBox">
-                    <span>state :</span>
-                    <input type="text" name="state" placeholder="e.g. maharashtra" class="box" required>
-                </div>
-                <div class="inputBox">
-                    <span>country :</span>
-                    <input type="text" name="country" placeholder="e.g. India" class="box" required>
-                </div>
-                <div class="inputBox">
-                    <span>pin code :</span>
-                    <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" class="box" required>
-                </div>
+
             </div>
 
             <input type="submit" name="order" class="btn <?= ($cart_grand_total > 1)?'':'disabled'; ?>"
