@@ -35,7 +35,7 @@ if(!isset($user_id)){
 
     <section class="placed-orders">
 
-        <h1 class="title">placed orders</h1>
+        <h1 class="title">Placed Orders</h1>
 
         <div class="box-container">
 
