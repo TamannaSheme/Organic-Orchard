@@ -99,10 +99,10 @@ if(isset($_POST['add_to_cart'])){
 
     <section class="p-category">
 
-        <a href="category.php?category=fruits">fruits</a>
-        <a href="category.php?category=vegitables">vegitables</a>
-        <a href="category.php?category=fish">fish</a>
-        <a href="category.php?category=meat">meat</a>
+        <a href="category.php?category=fruits">Fruits</a>
+        <a href="category.php?category=vegitables">Vegitables</a>
+        <a href="category.php?category=fish">Fish</a>
+        <a href="category.php?category=meat">Meat</a>
 
     </section>
 
@@ -140,12 +140,6 @@ if(isset($_POST['add_to_cart'])){
         </div>
 
     </section>
-
-
-
-
-
-
 
 
     <?php include 'footer.php'; ?>
