@@ -72,8 +72,9 @@ if(!isset($user_id)){
 
             <div class="box">
                 <img src="images/pic-1.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptates sit earum, neque non
-                    cupiditate amet deserunt aperiam quas ex.</p>
+                <p>Amazing food. PERIOD. Service is always perfect, food is always on point, and the staff is very
+                    friendly and accommodating. Always looking forward to this place with my friends, the fried vanilla
+                    ice cream is exceptionally good!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -86,8 +87,9 @@ if(!isset($user_id)){
 
             <div class="box">
                 <img src="images/pic-2.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptates sit earum, neque non
-                    cupiditate amet deserunt aperiam quas ex.</p>
+                <p>Amazing food. PERIOD. Service is always perfect, food is always on point, and the staff is very
+                    friendly and accommodating. Always looking forward to this place with my friends, the fried vanilla
+                    ice cream is exceptionally good!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -100,8 +102,9 @@ if(!isset($user_id)){
 
             <div class="box">
                 <img src="images/pic-3.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptates sit earum, neque non
-                    cupiditate amet deserunt aperiam quas ex.</p>
+                <p>LAmazing food. PERIOD. Service is always perfect, food is always on point, and the staff is very
+                    friendly and accommodating. Always looking forward to this place with my friends, the fried vanilla
+                    ice cream is exceptionally good!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -114,8 +117,9 @@ if(!isset($user_id)){
 
             <div class="box">
                 <img src="images/pic-4.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptates sit earum, neque non
-                    cupiditate amet deserunt aperiam quas ex.</p>
+                <p>Amazing food. PERIOD. Service is always perfect, food is always on point, and the staff is very
+                    friendly and accommodating. Always looking forward to this place with my friends, the fried vanilla
+                    ice cream is exceptionally good!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -128,8 +132,9 @@ if(!isset($user_id)){
 
             <div class="box">
                 <img src="images/pic-5.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptates sit earum, neque non
-                    cupiditate amet deserunt aperiam quas ex.</p>
+                <p>Amazing food. PERIOD. Service is always perfect, food is always on point, and the staff is very
+                    friendly and accommodating. Always looking forward to this place with my friends, the fried vanilla
+                    ice cream is exceptionally good!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -142,8 +147,9 @@ if(!isset($user_id)){
 
             <div class="box">
                 <img src="images/pic-6.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptates sit earum, neque non
-                    cupiditate amet deserunt aperiam quas ex.</p>
+                <p>Amazing food. PERIOD. Service is always perfect, food is always on point, and the staff is very
+                    friendly and accommodating. Always looking forward to this place with my friends, the fried vanilla
+                    ice cream is exceptionally good!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
