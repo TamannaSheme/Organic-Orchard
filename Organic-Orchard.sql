@@ -69,17 +69,6 @@ CREATE TABLE `users` (
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Table structure for table `wishlist`
-
-
-CREATE TABLE `wishlist` (
-  `id` int(100) NOT NULL,
-  `user_id` int(100) NOT NULL,
-  `pid` int(100) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `price` int(100) NOT NULL,
-  `image` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 -- Indexes for table `cart`
@@ -112,14 +101,6 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 
--- Indexes for table `wishlist`
-
-ALTER TABLE `wishlist`
-  ADD PRIMARY KEY (`id`);
-
-
--- AUTO_INCREMENT for dumped tables
-
 -- AUTO_INCREMENT for table `cart`
 
 ALTER TABLE `cart`
@@ -149,10 +130,5 @@ ALTER TABLE `products`
 ALTER TABLE `users`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
--- AUTO_INCREMENT for table `wishlist`
-
-ALTER TABLE `wishlist`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
-COMMIT;
 
 
