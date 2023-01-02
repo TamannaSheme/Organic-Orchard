@@ -192,7 +192,7 @@
 
 .user-accounts .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
+   grid-template-columns: repeat(auto-fit, 45rem);
    gap:1.5rem;
    align-items: flex-start;
    justify-content:center;
@@ -208,8 +208,8 @@
 }
 
 .user-accounts .box-container .box img{
-   height: 15rem;
-   width: 15rem;
+   height: 17rem;
+   width: 17rem;
    border-radius: 50%;
    object-fit: cover;
    margin-bottom: 1rem;

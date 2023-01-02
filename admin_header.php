@@ -40,7 +40,6 @@ if(isset($message)){
          ?>
             <img src="uploaded_img/<?= $fetch_profile['image']; ?>" alt="">
             <p><?= $fetch_profile['name']; ?></p>
-            <a href="admin_update_profile.php" class="btn">Update Profile</a>
             <a href="logout.php" class="delete-btn">Logout</a>
             <div class="flex-btn">
                 <a href="login.php" class="option-btn">Login</a>

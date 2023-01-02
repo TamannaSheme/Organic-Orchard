@@ -55,10 +55,10 @@ if(isset($_GET['delete'])){
       ?>
             <div class="box" style="<?php if($fetch_users['id'] == $admin_id){ echo 'display:none'; }; ?>">
                 <img src="uploaded_img/<?= $fetch_users['image']; ?>" alt="">
-                <p> User id : <span><?= $fetch_users['id']; ?></span></p>
+                <p> User ID: <span><?= $fetch_users['id']; ?></span></p>
                 <p> Username : <span><?= $fetch_users['name']; ?></span></p>
                 <p> Email : <span><?= $fetch_users['email']; ?></span></p>
-                <p> User type : <span
+                <p> User Type : <span
                         style=" color:<?php if($fetch_users['user_type'] == 'admin'){ echo 'orange'; }; ?>"><?= $fetch_users['user_type']; ?></span>
                 </p>
                 <a href="admin_users.php?delete=<?= $fetch_users['id']; ?>"
