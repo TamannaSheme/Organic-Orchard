@@ -100,27 +100,6 @@ if(!isset($admin_id)){
                 <a href="admin_users.php" class="btn">See Accounts</a>
             </div>
 
-            <div class="box">
-                <?php
-         $select_admins = $conn->prepare("SELECT * FROM `users` WHERE user_type = ?");
-         $select_admins->execute(['admin']);
-         $number_of_admins = $select_admins->rowCount();
-      ?>
-                <h3><?= $number_of_admins; ?></h3>
-                <p>Total Admins</p>
-                <a href="admin_users.php" class="btn">See Accounts</a>
-            </div>
-
-            <div class="box">
-                <?php
-         $select_accounts = $conn->prepare("SELECT * FROM `users`");
-         $select_accounts->execute();
-         $number_of_accounts = $select_accounts->rowCount();
-      ?>
-                <h3><?= $number_of_accounts; ?></h3>
-                <p>Total Accounts</p>
-                <a href="admin_users.php" class="btn">See Accounts</a>
-            </div>
 
             <div class="box">
                 <?php

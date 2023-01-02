@@ -99,7 +99,7 @@ if(isset($_GET['delete'])){
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="flex">
                 <div class="inputBox">
-                    <input type="text" name="name" class="box" required placeholder="enter product name">
+                    <input type="text" name="name" class="box" required placeholder="Enter Product Name">
                     <select name="category" class="box" required>
                         <option value="" selected disabled>Select Category</option>
                         <option value="vegitables">Vegitables</option>
@@ -109,13 +109,13 @@ if(isset($_GET['delete'])){
                     </select>
                 </div>
                 <div class="inputBox">
-                    <input type="number" min="0" name="price" class="box" required placeholder="enter product price">
+                    <input type="number" min="0" name="price" class="box" required placeholder="Enter Product Price">
                     <input type="file" name="image" required class="box" accept="image/jpg, image/jpeg, image/png">
                 </div>
             </div>
-            <textarea name="details" class="box" required placeholder="enter product details" cols="30"
+            <textarea name="details" class="box" required placeholder="Enter Product Details" cols="30"
                 rows="10"></textarea>
-            <input type="submit" class="btn" value="add product" name="add_product">
+            <input type="submit" class="btn" value="Add Product" name="add_product">
         </form>
 
     </section>
@@ -133,7 +133,7 @@ if(isset($_GET['delete'])){
          while($fetch_products = $show_products->fetch(PDO::FETCH_ASSOC)){  
    ?>
             <div class="box">
-                <div class="price">$<?= $fetch_products['price']; ?>/-</div>
+                <div class="price">Taka <?= $fetch_products['price']; ?>/-</div>
                 <img src="uploaded_img/<?= $fetch_products['image']; ?>" alt="">
                 <div class="name"><?= $fetch_products['name']; ?></div>
                 <div class="cat"><?= $fetch_products['category']; ?></div>
