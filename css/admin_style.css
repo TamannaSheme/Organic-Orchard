@@ -75,7 +75,7 @@
 
 .show-products .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 66rem);
+   grid-template-columns: repeat(auto-fit, 45rem);
    gap:1.5rem;
    align-items: flex-start;
    justify-content:center;
