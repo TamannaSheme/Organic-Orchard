@@ -299,29 +299,6 @@
    resize: none;
 }
 
-.search-form form{
-   display: flex;
-   gap:1.5rem;
-   align-items: center;
-}
-
-.search-form form .box{
-   width: 100%;
-   padding:1.4rem;
-   border:var(--border);
-   margin:1rem 0;
-   background-color: var(--white);
-   box-shadow: var(--box-shadow);
-   font-size: 2rem;
-   color:var(--black);
-   border-radius: .5rem;
-}
-
-.search-form form .btn{
-   display: inline-block;
-   width: auto;
-   margin-top: 0;
-}
 
 
 .shopping-cart .box-container{
