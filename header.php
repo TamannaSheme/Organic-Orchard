@@ -33,8 +33,7 @@ if(isset($message)){
             <?php
             $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
             $count_cart_items->execute([$user_id]);
-            $count_wishlist_items = $conn->prepare("SELECT * FROM `wishlist` WHERE user_id = ?");
-            $count_wishlist_items->execute([$user_id]);
+           
          ?>
 
             <a href="cart.php"><i
